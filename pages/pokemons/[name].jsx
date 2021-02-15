@@ -16,7 +16,7 @@ export async function getStaticPaths() {
       params: { name: pokemon.name },
     }))
   
-    return { paths, fallback: false }
+    return { paths, fallback: 'blocking' }
   }
   
   export async function getStaticProps({ params }) {
